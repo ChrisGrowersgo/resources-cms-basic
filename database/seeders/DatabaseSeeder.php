@@ -17,6 +17,10 @@ class DatabaseSeeder extends Seeder
 
         $this->call(CategorySeeder::class);
         $this->call(SubCategorySeeder::class);
+        
+        $this->call(CitiesSeeder::class);
+        $this->call(CountriesSeeder::class);
+        $this->call(StatesSeeder::class);
 
         User::factory()->create([
             'name' => 'Test User',
