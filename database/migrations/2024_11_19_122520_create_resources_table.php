@@ -17,7 +17,7 @@ return new class extends Migration
             $table->text('description')->nullable();
 
             $table->unsignedBigInteger('category_id');
-            $table->unsignedBigInteger('subcategory_id');
+            $table->unsignedBigInteger('sub_category_id');
 
             $table->string('address')->nullable();
             $table->string('postal_code')->nullable();
@@ -37,7 +37,7 @@ return new class extends Migration
 
             // foreign keys
             $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
-            $table->foreign('subcategory_id')->references('id')->on('sub_categories')->onDelete('cascade');
+            $table->foreign('sub_category_id')->references('id')->on('sub_categories')->onDelete('cascade');
             //$table->foreignId('sub_category_id')->nullable()->constrained('sub_categories')->onDelete('set null');
 
             $table->foreignId('state_id')->constrained('states')->onDelete('cascade');
