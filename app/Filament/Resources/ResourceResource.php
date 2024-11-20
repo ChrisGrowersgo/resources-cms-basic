@@ -62,7 +62,7 @@ class ResourceResource extends Resource
                             ->directory('area-images-icons')
                             ->label('Icon Image'),
                     ]),
-                Select::make('subcategory_id')
+                Select::make('sub_category_id')
                     ->label('SubCategory')
                     ->relationship('subCategory', 'name')
                     ->required()

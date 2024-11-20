@@ -11,7 +11,7 @@ class Resource extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name', 'description', 'category_id', 'subcategory_id', 'address', 
+        'name', 'description', 'category_id', 'sub_category_id', 'address', 
         'postal_code', 'state_id', 'city_id', 'village', 'phone_1', 'phone_2', 
         'email', 'url', 'latitude', 'longitude', 'images'
     ];
